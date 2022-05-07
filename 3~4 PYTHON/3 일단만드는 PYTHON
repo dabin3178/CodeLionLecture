@@ -1,0 +1,40 @@
+<리스트>
+foods = ["된장찌개", "피자", "제육볶음"]
+#추가
+foods.append("김밥")
+# 피자 삭제
+del foods[1]
+#리스트의 모든 요소에 하나씩 접근하여 출력
+for x in foods:
+    print(x)
+
+
+<딕셔너리>
+information = {"고향":"수원", "취미":"영화관람","좋아하는 음식":"국수"}
+# 추가 방법
+information["특기"] = "피아노"
+# 삭제 방법
+del information["좋아하는 음식"]
+# 딕셔너리 비우는 방법
+information.clear()
+#딕셔너리의 모든 요소에 하나씩 접근하여 출력
+for x, y in information.items():
+    print(x)
+    print(y)
+
+
+<집합>
+foods = ["된장찌개", "피자", "제육볶음"]
+foods_set1 = set(foods)
+foods_set2 = set(["된장찌개", "피자", "제육볶음"])
+#위 두 집합은 같음
+
+
+menu1 = set(["된장찌개", "피자", "제육볶음"])
+menu2 = set(["된장찌개", "떡국", "김밥"])
+#합집합
+menu3 = menu1 | menu2
+#교집합
+menu3 = menu1 & menu2
+#차집합
+menu3 = menu1 - menu2
