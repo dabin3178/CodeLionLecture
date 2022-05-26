@@ -1,0 +1,21 @@
+django 프로젝트 만드는 명령어
+django-admin startproject 프로젝트이름
+
+가상환경 생성 명령어
+python -m venv myvenv
+
+가상환경 실행 명령어
+source myvenv/Scripts/activate
+
+<manage.py의 기능>
+1. 서버 켜기
+2. Application 만들기
+(여기서 Application이란? Django 프로젝트의 단위라고 보면 됨!)
+3. Database 초기화 및 변경사항 반영
+4. 관리자 계정 만들기
+
+python manage.py startapp 앱이름
+: 장고 애플리케이션(프로젝트젝트를 이루는 단위)를 만드는 명령어
+
+관리자 계정 생성 명령어
+python manage.py createsupersuser
