@@ -12,3 +12,11 @@ SQL
 Primary Key(PK, 기본키)
 - 반드시 존재(Null 값 허용하지 않음)
 - 다른 값과 중복되면 안 된다
+
+Foreign Key(FK, 외래키)
+- 다른 테이블의 특정 컬럼, 혹은 다른 테이블을 참조할 수 있는 키
+- on_delete=CASCADE 쟤 삭제되면 얘도 삭제 해주세용
+
+
+pk값을 이용해 특정 모델 객체 하나만 가져오기
+: get_object_or_404()
